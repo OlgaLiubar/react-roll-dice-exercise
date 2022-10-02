@@ -32,7 +32,7 @@ export default class RollDice extends Component {
           <Die face={this.state.face1} rolling={this.state.rolling} />
           <Die face={this.state.face2} rolling={this.state.rolling} />
         </div>
-        <button className="rollDice-button" onClick={this.handleClick}>
+        <button className="rollDice-button" onClick={this.handleClick} disabled={this.state.rolling}>
           {this.state.rolling ? "Rolling..." : "Roll Dice!"}
         </button>
       </div>
